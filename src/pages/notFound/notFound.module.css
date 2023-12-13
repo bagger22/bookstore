@@ -1,0 +1,27 @@
+.notfound_container{
+    background-color: #313037;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.notfound_text{
+    font-size: 2rem;
+    color: rgba(204, 203, 203, 0.548);
+}
+
+.notfound_emoji{
+    color: rgba(204, 203, 203, 0.548);
+}
+
+.notfound_link{
+    text-decoration:wavy underline;
+    color: rgba(255, 255, 255, 0.63);
+    transition: 0.2s;
+}
+
+.notfound_link:hover{
+    color: #fff;
+}

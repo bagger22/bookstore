@@ -1,0 +1,18 @@
+.auth__title{
+    font-family: 'Bebas neue', sans-serif;
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin: 2rem 0 1.8rem 0;
+}
+
+.reset__form{
+    padding: 1rem;
+}
+
+.reset_message{
+    background-color: #F4EEFD;
+    padding: 1rem;
+    font-family: 'Ropa Sans', sans-serif;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}

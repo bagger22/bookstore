@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.container{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding:0 20px;
+}
+
+.book{
+
+}
+
+.main__title{
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #313037;
+}
+
+.main__books_container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(calc(30% - 1rem), 1fr));
+    gap: 2rem; 
+}
+
+.main__book {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.main__book_image {
+    background-color: #D7E4FD;
+    width: 22rem;
+}
+
+.main__book_title {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
+    margin-top: 1.25rem;
+    margin-bottom: 2.5rem;
+}
+
+.main__book_authors{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #A8A8A8;
+    margin-bottom: 2.5rem;
+    margin-top: auto;
+}
+
+.main__book_price {
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-top: auto; 
+} 
+    
+.main__loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 7rem;
+  }
+  
+  .main__spinner {
+    border: 4px solid rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #000000;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    animation: spin 1s linear infinite;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+  .main__pagination {
+    margin-top: 1.25rem;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    color: #A8A8A8;
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 700;
+  }
+  
+  .main__pagination span {
+    padding: 8px;
+    margin: 0 5px;
+    font-family: 'Ropa Sans', sans-serif;
+    text-transform: capitalize;
+  }
+  
+  .main__pagination span:hover {
+    background-color: #ddd;
+  }
+  
+  .main__pagination .active {
+    color: #313037;
+  } 
+
+  .main__pagination .arrow_left {
+  }
+  

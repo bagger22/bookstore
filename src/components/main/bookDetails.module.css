@@ -1,0 +1,72 @@
+/* bookDetails.module.css */
+
+.details__container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding:0 20px;
+  }
+  
+  .details__main_content {
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  .details__image_wrapper {
+    background-color: #FEE9E2;
+    width: 32rem;
+    height: 27rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .details__image {
+    display: block; 
+    max-width: 100%;
+    max-height: 100%; 
+  }
+  
+
+  .details__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-top: 4.5rem;
+  }
+  
+  .details__text {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .details__title{
+    font-family: 'Bebas Neue', sans-serif;
+    font-weight: 500;
+    font-size: 3.5rem;
+  }
+
+  .details__info {
+    margin-top: 2rem; 
+  }
+  
+  .details__tab {
+    cursor: pointer;
+    padding: 8px;
+    margin: 0;
+    display: inline-block;
+  }
+  
+  .details__active_tab {
+    border-bottom: 2px solid;
+  }
+  
+  .details__price {
+    margin-right: 2rem;
+  }
+  
+  .details__button {
+    margin-top: 1rem;
+  }
+
+  .details__text_details{
+    margin-left: 5rem;
+  }

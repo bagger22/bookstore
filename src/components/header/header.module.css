@@ -1,0 +1,42 @@
+.header__container{
+  max-width: 1120px;
+  margin: 0 auto;
+  padding:0 20px;
+  margin-bottom: 4.5rem;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__logo{
+  cursor: pointer;
+}
+
+.header__input{
+  position: relative;
+  padding: 1rem 1rem;
+  min-width: 33.8rem;
+  border: 1px solid #E7E7E7;
+  color: #A8A8A8;
+  outline: none;
+  background-image: url('../../assets/search-icon.svg');
+  background-repeat: no-repeat;
+  background-position: 97%;
+  margin: 2rem 9rem;
+}
+
+.header__input:focus{
+  border: 2px solid #E7E7E7;
+}
+
+.header__input:active{
+  border: 1px solid #E7E7E7;
+}
+
+.header__icon{
+  margin-left: 1rem;
+  cursor: pointer;
+}
