@@ -58,18 +58,20 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
 
   return (
     <div className={main.main__pagination}>
-<span
-  className={`${currentPage === 1 ? main.disabled : ''} ${main.arrow_left}`}
-  onClick={() => onPageChange(Math.max(1, currentPage - 1))}
->
-  &lt;- prev
-</span>
-      {renderPageNumbers()}
       <span
-        className={currentPage === totalPages ? main.disabled : ''}
+        className={`${currentPage === 1 ? main.disabled : ''} ${main.arrow_left}`}
+        onClick={() => onPageChange(Math.max(1, currentPage - 1))}
+      >
+        &lt;- prev
+      </span>
+      <div className={main.pageNumbersContainer}>
+        {renderPageNumbers()}
+      </div>
+      <span
+        className={`${currentPage === totalPages ? main.disabled : ''} ${main.arrow_right}`}
         onClick={() => onPageChange(Math.min(totalPages, currentPage + 1))}
       >
-      next -&gt; 
+        next -&gt;
       </span>
     </div>
   );

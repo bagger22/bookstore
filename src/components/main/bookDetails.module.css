@@ -1,4 +1,3 @@
-/* bookDetails.module.css */
 
 .details__container {
     max-width: 1120px;
@@ -6,6 +5,11 @@
     padding:0 20px;
   }
   
+  .details__back{
+    cursor: pointer;
+    margin-bottom: 2rem;
+  }
+
   .details__main_content {
     display: flex;
     align-items: flex-start;
@@ -27,21 +31,44 @@
   }
   
 
-  .details__wrapper {
+  .details__info_wrapper {
     display: flex;
     flex-direction: column;
     margin-top: 4.5rem;
+    margin-left: 10rem;
   }
   
+  .details__price{
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 2.2rem;
+  }
+
+  .details__price_wrapper{
+    margin-bottom: 2.2rem;
+  }
+
+  .details__rating{
+    margin-left: 21rem;
+    font-size: 1.5rem;
+  }
+
   .details__text {
     display: flex;
     justify-content: space-between;
+    font-family: 'Roboto', sans-serif;
+    color: #A8A8A8;
+  }
+
+  .details__text_details{
+    color: #000;
+    margin-bottom: 1rem;
   }
 
   .details__title{
     font-family: 'Bebas Neue', sans-serif;
     font-weight: 500;
     font-size: 3.5rem;
+    margin-bottom: 3rem;
   }
 
   .details__info {
@@ -65,8 +92,35 @@
   
   .details__button {
     margin-top: 1rem;
+    /* margin: 2rem 3rem 0rem 3rem; */
+    background-color: #313037;
+    color: #fff;
+    letter-spacing: 0.2rem;
+    border: none;
+    font-size: 1.5rem;
+    padding: 0.7rem;
+    font-family: 'Bebas Neue', sans-serif;
+    cursor: pointer;
+    transition: 0.2s;
   }
 
-  .details__text_details{
-    margin-left: 5rem;
+  .details__button:hover{
+    background-color: #5B5A62;
+  }
+
+  .details__button:active{
+    background-color: #313037;
+  }
+
+  .details__line{
+    border: 1px solid #E7E7E7;
+  }
+
+  .details__tab{
+    font-family: 'Roboto', sans-serif;  
+  }
+
+  .details__content{
+    margin-top: 2rem;
+    font-family: 'Roboto', sans-serif;
   }
