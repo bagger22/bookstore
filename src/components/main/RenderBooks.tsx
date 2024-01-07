@@ -6,7 +6,6 @@ import { useLocalStorage } from '../../shared/hooks/useLocalStorage';
 import footer from '../footer/footer.module.css';
 import Pagination from '../pagination/Pagination';
 import { fetchNewBooks } from '../../shared/api/api';
-
 const MainApp: React.FC = () => {
   const [books, setBooks] = useState<BookProps[]>([]);
   const [currentPage, setCurrentPage] = useState<number>(1);
@@ -18,6 +17,7 @@ const MainApp: React.FC = () => {
   const [errorMessage, setErrorMessage] = useState<string>('');
   const booksPerPage = 9;
   const totalBooksToShow = 50;
+
 
   useEffect(() => {const fetchData = async () => {
     try {
